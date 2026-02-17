@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joshua B. Mata | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,#111827,#020617);
+  color:#f9fafb;
+  line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+  background:#020617;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{color:#f97316;}
+nav ul{list-style:none;display:flex;gap:20px;}
+nav a{
+  color:#e5e7eb;
+  text-decoration:none;
+  font-size:0.95rem;
+}
+nav a:hover{color:#22c55e;}
+
+/* HERO (STATIC – NO ANIMATION) */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+  background:#020617;
+  border-bottom:4px solid #22c55e;
+}
+.hero h2{
+  font-size:2.8rem;
+  margin-bottom:10px;
+}
+.hero span{color:#22c55e;}
+.hero p{
+  font-size:1.1rem;
+  color:#cbd5f5;
+}
+
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:70px 25px;
+}
+
+section h2{
+  text-align:left;
+  font-size:2rem;
+  margin-bottom:30px;
+  color:#f97316;
+  border-left:6px solid #22c55e;
+  padding-left:15px;
+}
+
+/* BOX STYLE (NEW – FLAT & CLEAN) */
+.box{
+  background:#020617;
+  padding:30px;
+  border-radius:8px;
+  border:1px solid #1f2933;
+  margin-bottom:25px;
+}
+
+/* ABOUT */
+.about-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+.about-grid ul{list-style:square;margin-left:20px;}
+.about-grid li{margin-bottom:10px;}
+
+/* PROJECTS */
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+.project a{
+  color:#22c55e;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* SKILLS */
+.skill-list{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.skill{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid #1f2933;
+  padding-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.contact div{
+  background:#020617;
+  padding:15px;
+  border-left:5px solid #f97316;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#9ca3af;
+  margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .about-grid{grid-template-columns:1fr;}
+  .hero h2{font-size:2.2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Joshua B. Mata</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h2>Hello, I’m <span>Joshua B. Mata</span></h2>
+  <p>Web Development Student | Aspiring Data Analyst</p>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="box">
+      <p>
+        I am a student with a growing interest in web development and data analytics.
+        I enjoy learning how websites are structured and how information can be
+        presented clearly and effectively.
+      </p>
+    </div>
+    <div class="box">
+      <ul>
+        <li>Analytical thinker</li>
+        <li>Willing to learn</li>
+        <li>Detail-oriented</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="box project">
+      <h3>Analytics Website</h3>
+      <p>A simple website that presents data insights using visuals.</p>
+      <a href="#">View on GitHub</a>
+    </div>
+    <div class="box project">
+      <h3>Personal Portfolio</h3>
+      <p>A portfolio website created using HTML and CSS.</p>
+      <a href="#">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="box skill-list">
+    <div class="skill">
+      <span>Problem Solving</span>
+      <span>Intermediate</span>
+    </div>
+    <div class="skill">
+      <span>Web Basics</span>
+      <span>Basic</span>
+    </div>
+    <div class="skill">
+      <span>Data Analysis</span>
+      <span>Basic</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>Email: joshuamata23@email.com</div>
+    <div>GitHub: github.com/yourusername</div>
+  </div>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>
